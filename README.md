@@ -1,4 +1,4 @@
-# Avicultura 4.0 – Monitoramento e Notificação Ambiental com CLP Siemens S7-1200, MQTT, TagoIO e WhatsApp
+# Avicultura 4.0 – Monitoramento e Notificação de variáveis de ambiente com CLP Siemens S7-1200, MQTT, TagoIO e WhatsApp
 
 Este repositório contém o código-fonte, artefatos e documentação técnica do sistema desenvolvido para monitoramento ambiental aplicado à avicultura industrial. A solução integra um Controlador Lógico Programável (CLP Siemens S7-1200 G2) à nuvem por meio do protocolo MQTT, com supervisão via TagoIO e envio de notificações automáticas pelo WhatsApp utilizando Twilio.
 
