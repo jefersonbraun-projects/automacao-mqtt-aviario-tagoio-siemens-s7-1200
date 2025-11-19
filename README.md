@@ -108,8 +108,8 @@ Exemplo:
   "unit": "°C",
   "location": {"lat": -29.0, "lng": -51.1}
 }
-
-## 6. Nuvem – TagoIO
+```
+### 6. Nuvem – TagoIO
 
 Arquivos disponíveis em `/src/tagoio/`:
 
