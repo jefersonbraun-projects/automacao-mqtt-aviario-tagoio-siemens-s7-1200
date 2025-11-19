@@ -1,3 +1,12 @@
+# Ambientes Suportados
+
+Este projeto foi desenvolvido para demonstrar uma arquitetura industrial aplicada ao monitoramento ambiental em aviários, utilizando um CLP Siemens S7-1200 como unidade central de processamento. O objetivo é executar de forma confiável atividades críticas como aquisição de variáveis, tratamento de limites, geração de alarmes e envio periódico de dados para um broker MQTT. A partir desses dados, a plataforma TagoIO realiza o armazenamento histórico, visualização em dashboards e disparo de notificações automáticas via WhatsApp.
+
+A proposta central é garantir robustez tanto no nível de software quanto no nível de hardware.
+Ao empregar um CLP industrial — projetado para operar 24/7 em ambientes adversos — o sistema mantém alta disponibilidade, confiabilidade e possibilidade de expansão, diferentemente de soluções domésticas baseadas em microcontroladores ou computadores pessoais. Além disso, o uso de MQTT permite integrar o CLP com aplicações externas, serviços em nuvem e ferramentas de IoT de maneira padronizada e escalável.
+
+O sistema foi projetado para ser modular, reproduzível e de fácil manutenção, permitindo sua aplicação em estruturas avícolas reais e em ambientes acadêmicos para estudo de automação industrial, protocolos IoT e integração com serviços em nuvem.
+
 ## Ambientes Suportados
 
 O projeto foi desenvolvido com base no padrão IEC 61131-3, utilizado amplamente em controladores lógicos programáveis. Embora diferentes fabricantes possuam seus próprios ambientes de desenvolvimento, todos seguem esta norma, o que permite modularidade, padronização e facilidade de manutenção.
