@@ -1,4 +1,4 @@
-# Ambientes Suportados
+# Monitoramento e Notificação Ambiental com CLP Siemens S7-1200, MQTT, TagoIO e WhatsApp
 
 Este projeto foi desenvolvido para demonstrar uma arquitetura industrial aplicada ao monitoramento ambiental em aviários, utilizando um CLP Siemens S7-1200 como unidade central de processamento. O objetivo é executar de forma confiável atividades críticas como aquisição de variáveis, tratamento de limites, geração de alarmes e envio periódico de dados para um broker MQTT. A partir desses dados, a plataforma TagoIO realiza o armazenamento histórico, visualização em dashboards e disparo de notificações automáticas via WhatsApp.
 
