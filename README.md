@@ -8,16 +8,19 @@ O projeto foi desenvolvido no contexto de um Trabalho de Conclusão de Curso (En
 
 # 1. Visão Geral do Sistema
 
+<img width="945" height="559" alt="image" src="https://github.com/user-attachments/assets/00556f8c-a55d-43a1-9b75-b25b9bd4ee97" />
+
+
 A arquitetura do projeto está organizada em quatro camadas principais:
 
 ## 1.1 Camada de Campo – CLP Siemens S7-1200  
 - Aquisição de variáveis ambientais (temperatura, umidade, nível de água, nível de ração, pH e cloro).  
 - Bibliotecas utilizadas: **LMQTT** (cliente MQTT nativo) e **LStream** (serialização JSON).  
-- Estruturas de simulação, alarmes e heartbeat.  
+- Estruturas de simulação e alarmes.  
 - Programação em **Ladder (LAD)** e **SCL**.
 
 ## 1.2 Camada de Comunicação – MQTT  
-- Conexão TLS com broker MQTT do TagoIO.  
+- Conexão com broker MQTT do TagoIO.  
 - Publicação periódica JSON no tópico `tago/data/post`.  
 - Reconexão automática e tratamento de erros.
 
@@ -30,9 +33,6 @@ A arquitetura do projeto está organizada em quatro camadas principais:
 ## 1.4 Camada de Notificação – WhatsApp/Twilio  
 - Envio automático de alertas quando variáveis excedem limites.  
 - Compatível com Sandbox e modo produção.
-
-Diagramas completos encontram-se no diretório `/docs/architecture/`.
-
 ---
 
 # 2. Funcionalidades Principais
@@ -47,4 +47,5 @@ Diagramas completos encontram-se no diretório `/docs/architecture/`.
 ---
 
 # 3. Estrutura do Repositório
+
 
