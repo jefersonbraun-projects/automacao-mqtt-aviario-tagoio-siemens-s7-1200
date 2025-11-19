@@ -23,3 +23,7 @@ Além disso, vários ambientes compatíveis com IEC 61131-3 podem utilizar conce
 - **Outras plataformas baseadas em LAD, FBD ou ST**
 
 Observação: As bibliotecas **LMQTT** e **LStream** utilizadas aqui são exclusivas da linha Siemens S7-1200/S7-1500.
+
+## Arquitetura
+
+<img width="945" height="559" alt="image" src="https://github.com/user-attachments/assets/3dbd424b-c79f-457a-ad6e-0ca41e69c70b" />
