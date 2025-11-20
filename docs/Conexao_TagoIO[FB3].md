@@ -1,14 +1,21 @@
-Visão geral
+#Conexao_TagoIO[FB3].md
+
+Este documento apresenta uma visão geral da estrutura e do funcionamento do bloco funcional responsável pela comunicação MQTT entre o CLP e a plataforma TagoIO.
+O bloco Conexão_TagoIO é organizado em diversas networks que realizam, de forma sequencial, a inicialização da conexão MQTT, a montagem do payload JSON, a publicação dos dados e a lógica de envio periódico das variáveis para a nuvem.
 
 <img width="1183" height="488" alt="image" src="https://github.com/user-attachments/assets/605e4cb3-d16c-4821-97c9-ce202f280800" />
 
-Conexão 
+##Network 1
+
 <img width="688" height="237" alt="image" src="https://github.com/user-attachments/assets/f0359e17-f9be-41b7-9a02-4b296aad9d65" />
 
-Bloco MQTT
+##Network 2
+
 <img width="682" height="677" alt="image" src="https://github.com/user-attachments/assets/60bbe0c0-d287-4f0b-8ac5-24d41f33cf38" />
 
-Network 3
+##Network 3
+
+O código converte a variável de processo para string, formata a data/hora atual, seleciona o tipo de mensagem (normal ou alarme) e monta a estrutura JSON que será publicada via MQTT para o TagoIO.
 
 ```scl
 // ------------ Converter Variável para String -------------
