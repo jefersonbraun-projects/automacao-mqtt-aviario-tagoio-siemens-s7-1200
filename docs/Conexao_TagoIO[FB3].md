@@ -17,7 +17,7 @@ O bloco executado na Network 2 corresponde ao bloco funcional `LMQTT_Client`, pr
 ## Network 3
 
 O código converte a variável de processo para string, formata a data/hora atual, seleciona o tipo de mensagem (normal ou alarme) e monta a estrutura JSON que será publicada via MQTT para o TagoIO.
-[Biblioteca LStream usada no código](../manuais-e-datasheets/109781165_LStream_DOC_v1_6_en.pdf)
+[Biblioteca LStream usada no código](./docs/manuais-e-datasheets/109781165_LStream_DOC_v1_6_en.pdf)
 
 
 ```scl
