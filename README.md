@@ -57,4 +57,12 @@ O bloco Rotina_Alarmes executa a verificação dos limites de cada variável mon
 
 - [Rotina_Alarmes](./docs/Rotina_Alarmes[FB8].md)
 
+## Demais blocos funcionais desenvolvidos
+
+- [Rotina_Alarmes](./docs/Rotina_Alarmes[FB8].md)
+- [Rotina_Alarmes](./docs/Rotina_Alarmes[FB8].md)
+- [Rotina_Alarmes](./docs/Rotina_Alarmes[FB8].md)
+- [Rotina_Alarmes](./docs/Rotina_Alarmes[FB8].md)
+
+
 
