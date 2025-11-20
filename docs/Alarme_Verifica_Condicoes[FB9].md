@@ -2,6 +2,27 @@
 
 O bloco Alarme_Verifica_Condicoes é estruturado em duas networks: a primeira executa a verificação dos limites superior e inferior da variável monitorada e define o estado de alarme, enquanto a segunda monta o texto final da mensagem a partir do valor da variável e do limite ultrapassado.
 
+### Entradas e Saídas do Bloco
+
+**Entradas**
+- **Variavel_Monitorada**: valor atual da variável de processo que será comparado com os limites configurados.  
+- **Limite_Superior**: limite máximo permitido para a variável monitorada.  
+- **Limite_Inferior**: limite mínimo permitido para a variável monitorada.  
+- **Texto_Inicial_Lim_Sup**: texto inicial utilizado quando o limite superior é ultrapassado.  
+- **Texto_Inicial_Lim_Inf**: texto inicial utilizado quando o limite inferior é atingido.  
+- **Unidade_Medida**: unidade associada à variável (por exemplo, °C).  
+- **Publica_Alarme**: habilita a montagem da mensagem de alarme quando um limite é violado.
+
+**Saídas**
+- **Limite_Sup_Atingido**: indica que o valor ultrapassou o limite superior configurado.  
+- **Limite_Inf_Antigido**: indica que o valor ficou abaixo do limite inferior configurado.  
+- **Mensagem_Alarme**: mensagem final do alarme, formada pelo texto inicial, valor da variável e unidade de medida.
+
+**Alarmes avaliados**
+- Alarme de limite superior.  
+- Alarme de limite inferior.
+
+
 ## Network 1
 A Network 1 executa a lógica de verificação dos limites superior e inferior da variável monitorada, aplica o tempo de confirmação do alarme e define o estado final de disparo.
 <img width="1081" height="782" alt="image" src="https://github.com/user-attachments/assets/cdb1e147-14a2-4b0e-95d8-a33709c5f93f" />
