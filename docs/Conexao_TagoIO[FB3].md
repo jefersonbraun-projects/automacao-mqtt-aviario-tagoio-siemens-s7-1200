@@ -10,6 +10,7 @@ O bloco Conexão_TagoIO é organizado em diversas networks que realizam, de form
 <img width="688" height="237" alt="image" src="https://github.com/user-attachments/assets/f0359e17-f9be-41b7-9a02-4b296aad9d65" />
 
 ## Network 2
+O bloco executado na Network 2 corresponde ao bloco funcional `LMQTT_Client`, proveniente da biblioteca LMQTT, responsável por gerenciar as operações de conexão, publicação, assinatura e controle geral da comunicação MQTT no CLP.
 
 <img width="682" height="677" alt="image" src="https://github.com/user-attachments/assets/60bbe0c0-d287-4f0b-8ac5-24d41f33cf38" />
 
@@ -129,3 +130,66 @@ END_IF;
 "MQTT".Json_TAGOIO[5].depth := -1;
 "MQTT".Json_TAGOIO[5].closingElement := FALSE;
 ```
+
+## Network 4
+
+A Network 4 executa o bloco `LStream_JsonSerializer`, responsável por converter a estrutura JSON montada em buffer binário e disparar a publicação da mensagem MQTT quando a serialização é concluída.
+
+<img width="693" height="598" alt="image" src="https://github.com/user-attachments/assets/8501358e-fa53-4f39-91eb-73359d00b821" />
+
+## Network 5
+
+A Network 5 ajusta o buffer serializado removendo os bytes iniciais desnecessários, corrige o tamanho final da mensagem e prepara o payload JSON para publicação via MQTT.
+
+```scl
+#lastIdx := "LStream_JsonSerializer_DB".count;
+
+IF "LStream_JsonSerializer_DB".done AND "MQTT".publishMsgPayload[0] <> 91 THEN
+    // desloca o array 4 posições para trás
+    FOR #i := 0 TO #lastIdx BY 1 DO
+        "MQTT".publishMsgPayload[#i] := "MQTT".publishMsgPayload[#i + 4];
+    END_FOR;
+    
+    // limpa último Byte
+    "MQTT".publishMsgPayload[#lastIdx - 5] := 0;
+    #tamanho_Pub := #lastIdx - 5;
+END_IF;
+```
+## Network 6
+
+A Network 6 implementa a lógica de publicação periódica, verificando o minuto atual, comparando com o minuto configurado e gerando um pulso para disparar o envio cíclico de todas as variáveis.
+
+<img width="630" height="724" alt="image" src="https://github.com/user-attachments/assets/82756a0b-2023-4438-a0d9-680a56ea13c2" />
+
+## Network 7
+
+A Network 7 controla o envio sequencial de todas as variáveis, avançando o índice de publicação, acionando a montagem do JSON a cada ciclo permitido e encerrando o processo ao atingir o último item da lista.
+
+```scl
+IF "GLOBAL_VARS".Envia_todas_vars THEN
+    IF NOT("MQTT".Carrega_Json) AND "GLOBAL_VARS".indice_var = 0 THEN
+        "MQTT".Carrega_Json := TRUE;
+        #Aux_bool_0 := TRUE;
+        "GLOBAL_VARS".indice_var := 1;
+    END_IF;
+    
+    IF "LMQTT_Client_DB".done THEN
+        #Aux_bool_0 := FALSE;
+    END_IF;
+    
+    IF "vAR_pub_delay".Q AND NOT(#Aux_bool_0) THEN
+        "GLOBAL_VARS".indice_var := "GLOBAL_VARS".indice_var + 1;
+        "MQTT".Carrega_Json := TRUE;
+        #Aux_bool_0 := TRUE;
+    END_IF;
+
+    IF "GLOBAL_VARS".indice_var >= 18 THEN
+        "GLOBAL_VARS".Envia_todas_vars := FALSE;
+        "GLOBAL_VARS".indice_var := 0;
+    END_IF;
+END_IF;
+```
+
+
+
+
