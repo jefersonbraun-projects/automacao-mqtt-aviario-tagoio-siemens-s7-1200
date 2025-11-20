@@ -6,7 +6,7 @@ O TagoIO abstrai as chamadas diretas à API do Twilio e permite que todos os cam
 
 - **Phone number(s):** Número(s) de destino no formato internacional. O TagoIO envia a mensagem para cada número listado, utilizando o endpoint oficial do Twilio.
 
-- **From (Twilio Sandbox Number):** Número de origem fornecido pelo Twilio, normalmente o número padrão do Sandbox para WhatsApp (+14155238886). É obrigatório para permitir a autenticação da mensagem.
+- **From (Twilio Sandbox Number):** Número de origem fornecido pelo Twilio.
 
 - **Message:** Texto bruto que será enviado ao WhatsApp. Aceita templates, variáveis e substituições dinâmicas configuradas pelo usuário.
 
