@@ -31,7 +31,7 @@ A arquitetura do sistema é composta por um CLP Siemens S7-1200, responsável pe
 ### Principais configurações do dispositivo
 Arquivo contendo as principais configurações do CLP definidas no TIA Portal.
 
-- [principais_configuracoes_dispositivo](.docs/principais_configuracoes_dispositivo.md)
+- [principais_configuracoes_dispositivo](./docs/principais_configuracoes_dispositivo.md)
 
 ### Main [OB1]
 
