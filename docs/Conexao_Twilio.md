@@ -1,5 +1,27 @@
 # Conexao_Twilio
 
+A API do Twilio é executada diretamente pelo módulo de Actions do TagoIO, que fornece uma interface pronta para configuração dos parâmetros necessários ao envio de mensagens via WhatsApp. A imagem abaixo ilustra a tela de configuração da Action responsável pelo disparo das notificações:
+
+O TagoIO abstrai as chamadas diretas à API do Twilio e permite que todos os campos necessários sejam configurados pela interface. Os parâmetros utilizados são:
+
+- **Phone number(s):** Número(s) de destino no formato internacional. O TagoIO envia a mensagem para cada número listado, utilizando o endpoint oficial do Twilio.
+
+- **From (Twilio Sandbox Number):** Número de origem fornecido pelo Twilio, normalmente o número padrão do Sandbox para WhatsApp (+14155238886). É obrigatório para permitir a autenticação da mensagem.
+
+- **Message:** Texto bruto que será enviado ao WhatsApp. Aceita templates, variáveis e substituições dinâmicas configuradas pelo usuário.
+
+- **Template Variables:** Estrutura opcional de chave–valor usada quando o usuário emprega modelos de mensagem do Twilio. Essas variáveis são substituídas automaticamente no momento do envio.
+
+- **Template SID:** Identificador único de Template do Twilio, utilizado apenas quando mensagens estruturadas (templates aprovados) são usadas. O valor é armazenado como Secret no TagoIO.
+
+- **Twilio SID (TWILIO_ACCOUNT_SID):** Código único da conta Twilio. Permite que o TagoIO autentique a requisição antes de acessar o endpoint `/Messages.json`.
+
+- **Twilio Auth Token (TWILIO_AUTH_TOKEN):** Token de autenticação da API do Twilio. O TagoIO utiliza esse token para assinar todas as requisições enviadas ao Twilio. Também é armazenado como Secret.
+
+
+<img width="1639" height="896" alt="image" src="https://github.com/user-attachments/assets/995cffa8-8acf-46ba-be31-b49a471f7c18" />
+
+A seguir exemplo de código para acesso a API do Twilio
 
 ```javascript
 /**
