@@ -3,11 +3,7 @@
 
 ```javascript
 /**
- * Generic WhatsApp sending logic using Twilio API.
- * This example represents how an automation platform can execute
- * a request to Twilio using the configuration fields defined by the user.
- */
-
+ 
 const axios = require("axios");
 
 /**
