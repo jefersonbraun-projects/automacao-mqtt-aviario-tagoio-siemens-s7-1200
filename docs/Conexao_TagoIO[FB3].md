@@ -10,6 +10,7 @@ Bloco MQTT
 
 Network 3
 
+```scl
 // ------------ Converter Variável para String -------------
 #temp_int := ROUND("GLOBAL_VARS".Var_Value["GLOBAL_VARS".indice_var] * 10.0);
 #temp_real := INT_TO_REAL(#temp_int) / 10.0;
@@ -120,5 +121,4 @@ END_IF;
 "MQTT".Json_TAGOIO[5].value := 'NULL';
 "MQTT".Json_TAGOIO[5].depth := -1;
 "MQTT".Json_TAGOIO[5].closingElement := FALSE;
-
-
+```
