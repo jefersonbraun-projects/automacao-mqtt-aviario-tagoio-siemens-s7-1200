@@ -39,15 +39,22 @@ Arquivo contendo as principais configurações do CLP definidas no TIA Portal.
  
 - [Main(OB1)](./docs/Main[OB1].md)
  
-### BLOCO DE FUNÇÃO Conexao_TagoIO[FB3]
+### Bloco de função Conexao_TagoIO[FB3]
 
 O bloco Conexão_TagoIO gerencia toda a comunicação MQTT do CLP com a plataforma TagoIO, incluindo conexão, serialização do JSON e publicação das variáveis.
 
 - [Conexao_TagoIO](./docs/Conexao_TagoIO[FB3].md)
 
-### BLOCO DE FUNÇÃO Simulacao_variaveis_DB[FB7]
+### Bloco de função Simulacao_variaveis_DB[FB7]
 
 O bloco Simulação_variáveis executa a geração dos valores simulados usados nos testes, aplicando o mesmo algoritmo de simulação para cada variável do processo.
 
-- [Simulacao_variaveis_DB(OB1)](./docs/Simulacao_variaveis_DB[FB7].md)
+- [Simulacao_variaveis](./docs/Simulacao_variaveis_DB[FB7].md)
+
+### Bloco de função Rotina_Alarmes[FB8]
+
+O bloco Rotina_Alarmes executa a verificação dos limites de cada variável monitorada e determina o estado e a mensagem de alarme correspondente.
+
+- [Rotina_Alarmes](./docs/Rotina_Alarmes[FB8].md)
+
 
