@@ -69,6 +69,8 @@ O bloco Rotina_Alarmes executa a verificação dos limites de cada variável mon
 
 ## Configurações e Scripts do TagoIO
 
+A seguir estão documentados os scripts configurados na plataforma TagoIO para compor a lógica de monitoramento, processamento e integração utilizados neste projeto. Cada módulo foi desenvolvido em Python e executa de forma automática na plataforma, desempenhando funções específicas como supervisão de inatividade, cálculos estatísticos e comunicação externa.
+
 - [Supervisao_Inatividade_Dispositivos](./docs/Supervisao_Inatividade_Dispositivos.md)
 - [Calculo_min_Max](./docs/Calculo_min_Max.md)
 - [Conexao_Twilio](./docs/Conexao_Twilio.md)
