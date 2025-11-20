@@ -10,10 +10,10 @@ O sistema foi projetado para ser modular, reproduzível e de fácil manutenção
 ## Ambientes Suportados
 
 - **TIA Portal V20 (Siemens)**  
-  Utilizado para o desenvolvimento e a programação do CLP Siemens S7-1200, abrangendo STEP 7 Professional e os ambientes de configuração integrados do TIA Portal. Esta versão oferece suporte completo às bibliotecas LMQTT e LStream empregadas no projeto.
+  Utilizado para o desenvolvimento e a programação do CLP Siemens S7-1200, abrangendo STEP 7 Professional e os ambientes de configuração integrados do TIA Portal.
 
 - **TagoIO – Plataforma Cloud**  
-  Os dashboards foram desenvolvidos utilizando o recurso nativo de **Blueprint Dashboard**, permitindo replicação e padronização da interface.  
+  Os dashboards foram desenvolvidos utilizando o recurso nativo de **Blueprint Dashboard**
   As análises automatizadas foram implementadas por meio do **Runtime Python (python-rt2025)** disponível na própria plataforma.
 
 - **Twilio API – WhatsApp Business**  
