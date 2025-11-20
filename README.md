@@ -69,8 +69,9 @@ O bloco Rotina_Alarmes executa a verificação dos limites de cada variável mon
 
 ## Configurações e Scripts do TagoIO
 
+- [Supervisao_Inatividade_Dispositivos](./docs/Supervisao_Inatividade_Dispositivos.md)
 - [Conexao_Twilio](./docs/Conexao_Twilio.md)
-- [Conexao_Twilio](./docs/Conexao_Twilio.md)
+- [Supervisao_Inatividade_Dispositivos](./docs/Supervisao_Inatividade_Dispositivos.md)
 - [Conexao_Twilio](./docs/Conexao_Twilio.md)
 
 
