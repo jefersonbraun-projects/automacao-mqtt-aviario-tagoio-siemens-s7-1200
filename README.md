@@ -9,20 +9,16 @@ O sistema foi projetado para ser modular, reproduzível e de fácil manutenção
 
 ## Ambientes Suportados
 
-O projeto foi desenvolvido com base no padrão IEC 61131-3, utilizado amplamente em controladores lógicos programáveis. Embora diferentes fabricantes possuam seus próprios ambientes de desenvolvimento, todos seguem esta norma, o que permite modularidade, padronização e facilidade de manutenção.
+- **TIA Portal V20 (Siemens)**  
+  Utilizado para o desenvolvimento e a programação do CLP Siemens S7-1200, abrangendo STEP 7 Professional e os ambientes de configuração integrados do TIA Portal. Esta versão oferece suporte completo às bibliotecas LMQTT e LStream empregadas no projeto.
 
-Este repositório foi construído especificamente para:
+- **TagoIO – Plataforma Cloud**  
+  Os dashboards foram desenvolvidos utilizando o recurso nativo de **Blueprint Dashboard**, permitindo replicação e padronização da interface.  
+  As análises automatizadas foram implementadas por meio do **Runtime Python (python-rt2025)** disponível na própria plataforma.
 
-- **TIA Portal V20 – Siemens S7-1200 (G2)**
+- **Twilio API – WhatsApp Business**  
+  A funcionalidade de envio de mensagens foi implementada utilizando o modo **WhatsApp Sandbox**, recurso nativo da API do Twilio para testes e validação de fluxos de notificação.
 
-Além disso, vários ambientes compatíveis com IEC 61131-3 podem utilizar conceitos similares aos deste projeto, incluindo:
-
-- **CODESYS V3 – 3S-Smart Software Solutions**
-- **e!COCKPIT – WAGO**
-- **TwinCAT 3 – Beckhoff**
-- **Outras plataformas baseadas em LAD, FBD ou ST**
-
-Observação: As bibliotecas **LMQTT** e **LStream** utilizadas aqui são exclusivas da linha Siemens S7-1200/S7-1500.
 
 ## Arquitetura
 
