@@ -75,4 +75,12 @@ A seguir estão documentados os scripts configurados na plataforma TagoIO para c
 - [Calculo_min_Max](./docs/Calculo_min_Max.md)
 - [Conexao_Twilio](./docs/Conexao_Twilio.md)
 
+## Configurações no Twilio
+
+A seguir documento com as configurações realizadas no Twilio para habilitar o envio de mensagens WhatsApp utilizadas neste projeto.
+
+- [configuracoes-twilio](./docs/configuracoes-twilio.md)
+
+
+
 
