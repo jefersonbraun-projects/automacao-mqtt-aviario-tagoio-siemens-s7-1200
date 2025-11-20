@@ -1,7 +1,7 @@
 # Conexao_Twilio
 
 
-
+```javascript
 /**
  * Generic WhatsApp sending logic using Twilio API.
  * This example represents how an automation platform can execute
@@ -101,3 +101,4 @@ sendWhatsAppMessage({
   twilioAccountSid: "ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
   twilioAuthToken: "your_twilio_auth_token"
 });
+```
