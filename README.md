@@ -69,6 +69,8 @@ O bloco Rotina_Alarmes executa a verificação dos limites de cada variável mon
 
 ## Configurações e Scripts do TagoIO
 
-### Principais configurações do dispositivo
-Arquivo contendo as principais configurações do CLP definidas no TIA Portal.
+- [Conexao_Twilio](./docs/Conexao_Twilio.md)
+- [Conexao_Twilio](./docs/Conexao_Twilio.md)
+- [Conexao_Twilio](./docs/Conexao_Twilio.md)
+
 
