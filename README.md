@@ -38,3 +38,8 @@ Arquivo contendo as principais configurações do CLP definidas no TIA Portal.
  O bloco Main [OB1] é o bloco de organização cíclico principal do TIA Portal, responsável por executar continuamente a lógica do CLP em cada ciclo de varredura; neste projeto, é a partir dele que são chamados os blocos de função principais, cuja chamada foi implementada em linguagem Ladder.
  
 - [Main(OB1)](./docs/Main[OB1].md)
+- 
+### BLOCO DE FUNÇÃO conxeao_TagoIO
+
+
+ O bloco Main [O
