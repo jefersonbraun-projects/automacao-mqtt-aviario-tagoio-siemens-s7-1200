@@ -26,4 +26,6 @@ Observação: As bibliotecas **LMQTT** e **LStream** utilizadas aqui são exclus
 
 ## Arquitetura
 
+A arquitetura do sistema é composta por um CLP Siemens S7-1200, responsável pela aquisição dos dados ambientais e acionamento de atuadores no alojamento das aves, que se conecta à nuvem por meio da internet utilizando o protocolo MQTT. As informações coletadas são publicadas no MQTT Broker do TagoIO, onde são processadas, armazenadas e disponibilizadas para visualização em dashboards. A partir desses dados, a plataforma executa ações automáticas que incluem o envio de notificações via WhatsApp, utilizando a API do Twilio integrada à infraestrutura do WhatsApp Business da Meta. Os usuários podem acessar os dashboards e receber alertas em qualquer lugar com acesso à internet, permitindo acompanhamento remoto, supervisão contínua e resposta rápida a situações críticas no ambiente avícola.
+
 <img width="945" height="559" alt="image" src="https://github.com/user-attachments/assets/3dbd424b-c79f-457a-ad6e-0ca41e69c70b" />
