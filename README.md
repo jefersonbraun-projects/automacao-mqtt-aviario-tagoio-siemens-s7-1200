@@ -7,7 +7,7 @@ Ao empregar um CLP industrial — projetado para operar 24/7 em ambientes advers
 
 O sistema foi projetado para ser modular, reproduzível e de fácil manutenção, permitindo sua aplicação em estruturas avícolas reais e em ambientes acadêmicos para estudo de automação industrial, protocolos IoT e integração com serviços em nuvem.
 
-## Ambientes Suportados
+## Ambientes de Desenvolvimento
 
 - **TIA Portal V20 (Siemens)**  
   Utilizado para o desenvolvimento e a programação do CLP Siemens S7-1200, abrangendo STEP 7 Professional e os ambientes de configuração integrados do TIA Portal.
