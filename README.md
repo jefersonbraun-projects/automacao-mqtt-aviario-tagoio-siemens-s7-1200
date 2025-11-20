@@ -32,4 +32,4 @@ A arquitetura do sistema é composta por um CLP Siemens S7-1200, responsável pe
 
  O bloco Main [OB1] é o bloco de organização cíclico principal do TIA Portal, responsável por executar continuamente a lógica do CLP em cada ciclo de varredura; neste projeto, é a partir dele que são chamados os blocos de função principais, cuja chamada foi implementada em linguagem Ladder.
  
-**(./docs/Main[OB1])**
+- [Main[OB1](./docs/Main[OB1])
