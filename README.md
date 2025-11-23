@@ -57,6 +57,12 @@ O bloco Rotina_Alarmes executa a verificação dos limites de cada variável mon
 
 - [Rotina_Alarmes](./docs/Rotina_Alarmes[FB8].md)
 
+### Bloco de função Leitura_Variaveis[FB1]
+
+O bloco Leitura_Variaveis interpreta o payload recebido via MQTT, identifica qual variável foi enviada e atualiza o valor correspondente no CLP.
+
+- [Leitura_Variaveis.md](./docs/Leitura_Variaveis.md)
+
 ### Demais blocos funcionais desenvolvidos
 
 - [Alarme_Verifica_Condicoes](./docs/Alarme_Verifica_Condicoes[FB9].md)
