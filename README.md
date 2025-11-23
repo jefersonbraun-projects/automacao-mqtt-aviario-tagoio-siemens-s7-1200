@@ -79,6 +79,7 @@ A seguir estão documentados os scripts configurados na plataforma TagoIO para c
 
 - [Supervisao_Inatividade_Dispositivos](./docs/Supervisao_Inatividade_Dispositivos.md)
 - [Calculo_min_Max](./docs/Calculo_min_Max.md)
+- [Publicacao_limites](./docs/Publicacao_limites.md)
 - [Conexao_Twilio](./docs/Conexao_Twilio.md)
 
 ## Configurações no Twilio
